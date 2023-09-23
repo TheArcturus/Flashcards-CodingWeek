@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codeine.codingweek.PageApprentissageWhatisaskedController">
+   <VBox minHeight="30"/>
+
+   <VBox fx:id="laVb" alignment="CENTER" minHeight="550" maxHeight="550" prefWidth="800" spacing="10">
+
+         <HBox spacing="50" alignment="CENTER" maxHeight="150" style="-fx-padding: 0 0 30 0">
+            <HBox styleClass="card_bis" maxHeight="50">
+               <Label text="Numéro: "/>
+               <Label id="question"/>
+            </HBox>
+            <HBox styleClass="card_bis" maxHeight="50">
+               <Label text="Temps restant: "/>
+               <Label fx:id="compteurLabel"/>
+            </HBox>
+         </HBox>
+
+         <VBox prefHeight="330" alignment="CENTER" spacing="30" style="-fx-padding: 0 40 0 40">
+            <VBox styleClass="card_bis" alignment="CENTER" prefHeight="150" spacing="20">
+               <Label text="Question" prefHeight="50" styleClass="question_response"/>
+               <Label id="asked" prefHeight="50"/>
+               <Text id="hint" fx:id="hint" strokeType="OUTSIDE" strokeWidth="0.0" text="Hint">
+                  <font>
+                     <Font size="25.0" />
+                  </font>
+               </Text>
+            </VBox>
+             <VBox minHeight="150" maxHeight="150" styleClass="card_bis" alignment="CENTER" spacing="20" visible="false">
+                 <Label text="Réponse" prefHeight="50" styleClass="question_response"/>
+                 <Label id="reponse" prefHeight="50"/>
+                 <VBox minHeight="30" maxHeight="30"/>
+             </VBox>
+         </VBox>
+
+         <HBox alignment="CENTER" minHeight="50" style="-fx-padding: 30 0 0 0">
+            <Button id="see" mnemonicParsing="false" onAction="#goToReponse" styleClass="bottom_button" text="Voir la réponse"/>
+         </HBox>
+      </VBox>
+</VBox>

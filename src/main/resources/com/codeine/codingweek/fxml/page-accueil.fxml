@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" spacing="20" style="-fx-background-color: #e7ecec" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codeine.codingweek.AccueilController">
+
+    <fx:include source="menu.fxml" />
+
+    <HBox alignment="CENTER" prefHeight="106">
+        <ImageView fitHeight="100" fitWidth="500" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/flash_duck.png" />
+        </ImageView>
+        <ImageView fitHeight="106.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/Mascotte_borderless.png" />
+        </ImageView>
+    </HBox>
+
+    <HBox alignment="CENTER" prefHeight="400">
+        <HBox alignment="CENTER" prefHeight="300" prefWidth="400">
+            <Button id="creation" fx:id="button_creation" alignment="TOP_CENTER" contentDisplay="BOTTOM" graphicTextGap="80.0" onAction="#creation" prefHeight="400" prefWidth="300" styleClass="card" text="Création">
+            <graphic>
+               <ImageView fitHeight="200" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                   <Image url="@../images/learning_logo.png" />
+               </ImageView>
+            </graphic>
+            </Button>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="300" prefWidth="400">
+            <Button id="apprendre" fx:id="button_apprentissage" alignment="TOP_CENTER" contentDisplay="BOTTOM" graphicTextGap="80.0" onAction="#apprentissage" prefHeight="400" prefWidth="300" styleClass="card" text="Apprentissage">
+            <graphic>
+               <ImageView fitHeight="193.0" fitWidth="230.0" preserveRatio="true">
+                  <image>
+                     <Image url="@../images/brain_logo.png" />
+                  </image>
+                  <viewport>
+                     <Rectangle2D />
+                  </viewport>
+               </ImageView>
+            </graphic>
+            </Button>
+        </HBox>
+    </HBox>
+</VBox>

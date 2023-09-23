@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.codeine.codingweek.MenuController">
+    <MenuBar style="-fx-background-color: #54ABAC; -fx-padding: 2">
+        <Menu/>
+    </MenuBar>
+    <HBox alignment="CENTER">
+        <MenuBar styleClass="menu">
+            <Menu>
+                <graphic>
+                    <Button id="menuCreate" fx:id="create" text="Création" style="-fx-background-color: transparent; -fx-font-size: 11; -fx-font-weight: bold"/>
+                </graphic>
+            </Menu>
+            <Menu>
+                <graphic>
+                    <Button id="menuPrincipal" fx:id="principal" text="Principal" style="-fx-background-color: transparent; -fx-font-size: 11; -fx-font-weight: bold"/>
+                </graphic>
+            </Menu>
+            <Menu>
+                <graphic>
+                    <Button id="menuLearn" fx:id="learn" text="Apprentissage" style="-fx-background-color: transparent; -fx-font-size: 11; -fx-font-weight: bold"/>
+                </graphic>
+            </Menu>
+        </MenuBar>
+    </HBox>
+</StackPane>

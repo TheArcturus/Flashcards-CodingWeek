@@ -1,0 +1,224 @@
+
+.card {
+
+    -fx-background-color: #f3f6dd ;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 0);
+}
+
+.card:hover {
+  
+  -fx-background-color: #ffd064;
+  
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0, 0, 0);
+
+}
+
+.button_classique {
+
+    -fx-background-color: #d8d8d5 ;
+    -fx-font-weight: bold;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 16px;
+    -fx-text-fill: black ;
+
+    -fx-spacing: 10px ;
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 0);
+
+}
+
+.button_classique:hover {
+  -fx-background-color: #fdd700;
+}
+
+.text {
+
+  -fx-text-fill: #d68301 ;
+  -fx-font: 18 arial;
+  -fx-font-weight: bold;
+
+}
+.menu, .context-menu  {
+    -fx-border-color: #54ABAC;
+    -fx-padding: 0;
+    -fx-spacing: 30;
+}
+
+.menu-bar {
+    -fx-background-color: #54ABAC;
+    -fx-selection-bar: #f3f6dd ;
+    -fx-text-background-color: black ;
+}
+
+.bottom_button, .bottom_button_green, .bottom_button_red {
+
+  -fx-padding: 20 20 20 20 ;
+  -fx-margin: 0 0 10 0 ;
+  -fx-border-radius: 0px;
+  -fx-border-width: 1px;
+  -fx-border-radius: 20px;
+  -fx-background-radius: 20px;
+  -fx-background-color: white ;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.650), 4, 0, 0, 0);
+}
+
+.bottom_button_green {
+    -fx-background-color: #b6d3a8;
+}
+
+.bottom_button_red {
+    -fx-background-color: #fc5d5d;
+}
+
+.bottom_button:hover, .bottom_button_green:hover, .bottom_button_red:hover {
+  -fx-background-color: #ffd064;
+}
+
+.icone_button {
+
+  -fx-padding: 10 10 10 10 ;
+  -fx-margin: 0 0 10 0 ;
+  -fx-border-radius: 0px;
+
+  -fx-border-width: 1px;
+  -fx-border-radius: 20px;
+  -fx-background-radius: 20px;
+
+  -fx-background-color: #f3f6dd ;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.650), 4, 0, 0, 0);
+
+}
+
+.icone_button_carte_delete {
+
+    -fx-padding: 10 10 10 10 ;
+    -fx-margin: 0 0 10 0 ;
+
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px 0px 20px 0px;
+    -fx-background-radius: 0px 0px 20px 0px;
+
+    -fx-background-color: #f3f6dd ;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.650), 4, 0, 0, 0);
+
+}
+
+.icone_button_carte_modif {
+
+    -fx-padding: 10 10 10 10 ;
+    -fx-margin: 0 0 10 0 ;
+
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px 20px 0px 0px;
+    -fx-background-radius: 0px 20px 0px 0px;
+
+    -fx-background-color: #f3f6dd ;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.650), 4, 0, 0, 0);
+
+}
+
+.icone_button_entered {
+    -fx-background-color: #ffd064
+}
+
+.icone_button_exited {
+    -fx-background-color: #f3f6dd
+}
+
+.card_bis {
+
+  -fx-background-color: #f3f6dd ;
+  -fx-font-weight: bold;
+  -fx-border-width: 1px;
+  -fx-border-radius: 10px;
+  -fx-background-radius: 10px;
+  -fx-padding: 10px;
+  -fx-font-size: 16px;
+  -fx-text-fill: #d68301 ;
+  
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 4, 0, 0, 0);
+  
+}
+
+.question_response {
+    -fx-font-weight: bold;
+    -fx-text-fill: #d68301;
+}
+
+.text_area_edit {
+
+  -fx-border-width: 20px !important;
+  -fx-border-radius: 10px !important;
+  -fx-background-radius: 10px !important;
+  -fx-margin: 0 0 10 0 ;
+
+  -fx-text-fill: black;
+  -fx-font-size: 18px ;
+
+  -fx-control-inner-background: #f3f6dd;
+
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0, 0, 0);
+}
+
+.pile_show, .pile_show_grey {
+    /*-fx-border-color: black;*/
+    /*-fx-border-radius: 5;*/
+    -fx-margin-bottom: 20;
+    /*-fx-background-radius: 5;*/
+    /*-fx-background-color: #f3f6dd;*/
+}
+
+.pile_show_grey {
+    /*-fx-background-color: #b4b4b4;*/
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+    -fx-text-fill: #9f9f9f;
+}
+
+.pile_show:hover {
+    /*-fx-background-color: #ffd064*/
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0, 0, 0);
+}
+
+.pile_show_grey:hover {
+    /*-fx-background-color: #b4b4b4;*/
+    -fx-text-fill: #9f9f9f;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0), 0, 0, 0, 0);
+}
+
+.check-box {
+  -fx-background-color: white;
+  -fx-padding: 5px;
+}
+
+.check-box .box {
+  -fx-background-color: white;
+  -fx-border-color: black;
+  -fx-border-width: 1px;
+  -fx-padding: 5px;
+}
+
+.check-box .mark {
+  -fx-background-color: black;
+  visibility: hidden;
+}
+
+.check-box:selected .mark {
+  visibility: visible;
+}
+
+.vbox_reponse {
+
+  -fx-padding: 0 40 0 40 ;
+  -fx-background-color: #f3f6dd ;
+  -fx-border-radius: 5 ;
+  -fx-border-width: 5px ;
+
+}

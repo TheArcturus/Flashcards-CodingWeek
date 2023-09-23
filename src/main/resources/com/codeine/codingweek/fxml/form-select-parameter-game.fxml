@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codeine.codingweek.FormSelectParameterGameController">
+   <top>
+      <fx:include source="menu.fxml" />
+   </top>
+   <center>
+
+      <VBox>
+         <HBox alignment="CENTER" prefHeight="40">
+            <Label text="Paramètres de la partie" styleClass="text"/>
+         </HBox>
+         <HBox alignment="CENTER" spacing="50.0" prefHeight="400" BorderPane.alignment="CENTER" style="-fx-background-color: #ffffff">
+            <children>
+             <Button id="byQuestion" alignment="TOP_CENTER" contentDisplay="BOTTOM" graphicTextGap="80.0" mnemonicParsing="false" onAction="#goToGameWithQuestions" prefHeight="350" prefWidth="300" styleClass="card" text="Afficher les questions">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/question.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="byAnswer" alignment="TOP_CENTER" contentDisplay="BOTTOM" graphicTextGap="20.0" mnemonicParsing="false" onAction="#goToGameWithReponses" prefHeight="350" prefWidth="300" styleClass="card" text="Afficher les réponses">
+               <graphic>
+                  <ImageView fitHeight="258.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/answer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+          <HBox alignment="CENTER" prefHeight="50" prefWidth="200.0" BorderPane.alignment="CENTER" style="-fx-background-color: #ffffff">
+              <children>
+                  <CheckBox id="mix" mnemonicParsing="false" text="Mélanger" fx:id="melangeBox" styleClass="check-box" />
+              </children>
+          </HBox>
+         <HBox alignment="CENTER" prefHeight="90">
+            <Button id="return" text="Retour" styleClass="bottom_button" alignment="CENTER" onAction="#retour"/>
+         </HBox>
+      </VBox>
+   </center>
+</BorderPane>
